@@ -1,0 +1,20 @@
+PODS:
+  - Bugsnag (5.10.0):
+    - KSCrash/RecordingAdvanced (= 1.8.13)
+  - KSCrash/Recording (1.8.13)
+  - KSCrash/RecordingAdvanced (1.8.13):
+    - KSCrash/Recording
+  - SimulatorRemoteNotifications (0.0.3)
+
+DEPENDENCIES:
+  - Bugsnag
+  - SimulatorRemoteNotifications (~> 0.0.3)
+
+SPEC CHECKSUMS:
+  Bugsnag: c098d7fc7997b5fdd02dded682e9b2faa0a94a0d
+  KSCrash: 4c3a83f133b60f4bd57e05235ebf8d46e36d378d
+  SimulatorRemoteNotifications: 1610643e0582b2af67bc254b071ace4077e8ef86
+
+PODFILE CHECKSUM: 6da8e03b2c78573f1dbbb8a67859f2ba1c8c5c55
+
+COCOAPODS: 1.2.1

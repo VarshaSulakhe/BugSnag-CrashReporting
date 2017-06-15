@@ -1,0 +1,1431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		018234168EFF093862D8A9E0ADD99C9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		02FA46D2BA924A7ED288C7DA182CF01A /* KSSystemInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E31839A88F3904FAA9C5790DB1D86CE /* KSSystemInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		058ED9D32C98167C7D2A55B07080A854 /* KSCrashReport.h in Headers */ = {isa = PBXBuildFile; fileRef = 19C123554B5B0B7CDC90FF22A46BBA26 /* KSCrashReport.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0680E3E743780200E71C88EA9AD99453 /* KSCrashSentry.c in Sources */ = {isa = PBXBuildFile; fileRef = 06B2461A1E95F14C4F544D82C7A812F0 /* KSCrashSentry.c */; };
+		0686BA40E5912133B523F8FDFDDD6F73 /* KSCrashReport.c in Sources */ = {isa = PBXBuildFile; fileRef = 8C4B474935FFDAC82B557F3BE257B878 /* KSCrashReport.c */; };
+		0747A3C88D2451D547EA480996C8A28B /* KSCrash-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC52DFBD154C84788210F5D58C4EF8B /* KSCrash-dummy.m */; };
+		09C686DE383DF5B467E922020F564778 /* KSMach_Arm64.c in Sources */ = {isa = PBXBuildFile; fileRef = 98A0D550AC0E17DC2241F65822BF3F4B /* KSMach_Arm64.c */; };
+		13FE24B62B4DB02E847624E0D0DB5638 /* Bugsnag.h in Headers */ = {isa = PBXBuildFile; fileRef = F15FC9F6B20E63BB8D4B512DA72AE8D8 /* Bugsnag.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16584803A505AB0093FB8EDF67752C58 /* BugsnagBreadcrumb.h in Headers */ = {isa = PBXBuildFile; fileRef = DA675A60A11A774FAFBC5E9E7D467067 /* BugsnagBreadcrumb.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		182685DE2C2D9F2CD7A3BC4F723F2143 /* Pods-Sample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 391AB8CED1681B6B2E8E81EB3487A437 /* Pods-Sample-dummy.m */; };
+		195D98DD9C583192CAF9D77E4EDE2CE0 /* KSCrashSentry.h in Headers */ = {isa = PBXBuildFile; fileRef = CC3494BBACE77E41AFD2E06BE181D34D /* KSCrashSentry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19C64C523A8B2972C18219C6A6FEA570 /* KSCrashSentry_Signal.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F5DEED9E5E113B8FE9C2A412F7F7502 /* KSCrashSentry_Signal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		19D1C635040991DD65736581D13465E6 /* KSSysCtl.c in Sources */ = {isa = PBXBuildFile; fileRef = B39D6D5A2231E8E079C234CFFC1A1922 /* KSSysCtl.c */; };
+		1B4737195B8577C2D745C5785D586057 /* KSCrashSentry_CPPException.h in Headers */ = {isa = PBXBuildFile; fileRef = C5C978EEAA0C4E8E3742BD1206E45BCF /* KSCrashSentry_CPPException.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1C0DE80F6DC7C9BA7E235CAF8CDE723F /* KSObjC.c in Sources */ = {isa = PBXBuildFile; fileRef = EE0D21D21030E2CAABAA9D80453E90A7 /* KSObjC.c */; };
+		1C31830464853BA0F8634C6F3CADFC85 /* KSJSONCodec.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F653690B0854F08104DEB27F28BF44A /* KSJSONCodec.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1CFC0886850098EAF644EBE986735DDF /* KSSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D544F069C67486505179E184C33712D1 /* KSSystemInfo.m */; };
+		203C85D7A5985728B10B38938F086450 /* StringRef.h in Headers */ = {isa = PBXBuildFile; fileRef = E9A17D42B2F2A085EA19F5908F9BF790 /* StringRef.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2325F169260048823EC81F6ED58A5171 /* BugsnagConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBA485E70E6C465C8D98AC207BD05C0 /* BugsnagConfiguration.m */; };
+		2434C65DB0959703F5FF870F58B0DB20 /* DemangleNodes.h in Headers */ = {isa = PBXBuildFile; fileRef = B78D173AC0657029C3BED0AA8507B95A /* DemangleNodes.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		25F43F3D21561594AC4A93CE3EA44D6A /* KSCrashType.h in Headers */ = {isa = PBXBuildFile; fileRef = 2599DFEB83388F5278FAF5701E5CDE8E /* KSCrashType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		261D9524BA732082B2C188E2E219B49A /* UIApplication+SimulatorRemoteNotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9C00BC5C0CA5075F7F69688C99768B /* UIApplication+SimulatorRemoteNotifications.m */; };
+		26394C3DFDF2461679BCD5CF8ABA1934 /* KSLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = CA64E9AF4659CC4E1A9BB7632147CDF1 /* KSLogger.m */; };
+		28A1903C4D406E7241F8849B884581D7 /* KSSafeCollections.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9AA40EE451BC91C664ACA835CB94EE /* KSSafeCollections.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		28FA872FB4EB3D9C72995266AE97AE09 /* KSCrashReportFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F14CB6C28F4812252C9BFA24F8979EE /* KSCrashReportFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C181027A99AD335C62A45E79B3CEA83 /* BugsnagNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 28986A8E40E61761B326085BF3B4ED76 /* BugsnagNotifier.m */; };
+		2D29CF6B8D0C650623715D1445EAC620 /* KSCrashState.h in Headers */ = {isa = PBXBuildFile; fileRef = 95820AFE9D914AFA24E9B13CAAF2110A /* KSCrashState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D3F76662805F809907783D12EA60800 /* KSCrashSentry_MachException.h in Headers */ = {isa = PBXBuildFile; fileRef = 15B47BCF65F34974DD45E18D5DF2F953 /* KSCrashSentry_MachException.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2D82C050EEBE30DD76A7F93757F6CA48 /* NSString+Demangle.mm in Sources */ = {isa = PBXBuildFile; fileRef = 54DC568F212AEBF9DFBD8692A7FF4A17 /* NSString+Demangle.mm */; };
+		2F7299A189BEF9B9629EA5072BF7FB0D /* KSLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E9FCE8306942EE7599887EC9416EAFA /* KSLogger.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		37194D1DC640118392E369A833530BAF /* KSMach.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D2CF2C9E3C81D203C45B83609D5B15 /* KSMach.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3934E0B38EFA9191CD2D07F226ACB881 /* Malloc.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FBDE4E55F4534166DAC476A264DE0B0 /* Malloc.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3946F657A878974A74506B4E4F41AB2E /* KSMach.c in Sources */ = {isa = PBXBuildFile; fileRef = 7561DE9B79B427A46860C33670F84D4B /* KSMach.c */; };
+		39CC58F0EBF9033AF993D6E22C1A8649 /* NSDictionary+Merge.m in Sources */ = {isa = PBXBuildFile; fileRef = A61EFB3237C227493679C6DCF9E70F92 /* NSDictionary+Merge.m */; };
+		40D3CED97454DEB61B92A798DDE03BB3 /* KSSignalInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1B75DEC4893BA97B35662ED92CC18E /* KSSignalInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		44371CC8970927AD3CDB821DCCDB468D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		464697F381D5DA8B7DDA6FE206064CC3 /* Demangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 7308259D31E10B17A343E433D7FC9B8A /* Demangle.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		47A357D5D267394F96C04E212A5777FD /* Bugsnag-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1C1684492A039F3B4D8856899D27CC /* Bugsnag-dummy.m */; };
+		4D9FF8833BE5C07CE428823003E2D3E9 /* KSDynamicLinker.h in Headers */ = {isa = PBXBuildFile; fileRef = 82A6F5851E7985AD668239931DA0355B /* KSDynamicLinker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		501D359D4E5AF3013B34B66AC543604B /* Fallthrough.h in Headers */ = {isa = PBXBuildFile; fileRef = B9D7E7E5B28E86FCF360C56FA188B93F /* Fallthrough.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		504947F7BB43C933888A96984629FE0A /* BSGSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F62725D18D725CEADDEEECADEECC9FF /* BSGSerialization.m */; };
+		52C44A9FABB298B13B8AD577D818C2F3 /* llvm-config.h in Headers */ = {isa = PBXBuildFile; fileRef = F20AADFCA74E887E1B8EA147D1C3F6DD /* llvm-config.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		530D8EDD4E74186AF601747C2D8ECFED /* BugsnagCrashReport.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2EC0F4000FDFEEBDD855F50123FFF4 /* BugsnagCrashReport.m */; };
+		53183BC1E0FEA28A7B8BCFCFFA9DCD0E /* BSGSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = EA93093D4F3DDE555FD7F7289178F49A /* BSGSerialization.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5A915D9014827544AE5EC0825E396E84 /* UIApplication+SimulatorRemoteNotifications.h in Headers */ = {isa = PBXBuildFile; fileRef = CE752F8B1D98B98225F66C7F4A58F00B /* UIApplication+SimulatorRemoteNotifications.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B8272F4B6036929FE04281C2338472B /* ACSimulatorRemoteNotificationsService.m in Sources */ = {isa = PBXBuildFile; fileRef = DB4B0652506841939DCC015724DFB139 /* ACSimulatorRemoteNotificationsService.m */; };
+		61E788389A7E8317AB0766435A488407 /* KSCrashDoctor.m in Sources */ = {isa = PBXBuildFile; fileRef = D33D6700DEAF2CB47D458B739CFD0FF9 /* KSCrashDoctor.m */; };
+		61F2DE0975EEE32C4C65DDF2F7A3E02A /* KSDynamicLinker.c in Sources */ = {isa = PBXBuildFile; fileRef = 48F33F82CC2DC3D2C737E772AAFEDCA8 /* KSDynamicLinker.c */; };
+		661C6D6BA202E9470A709728BA1B4EF8 /* Compiler.h in Headers */ = {isa = PBXBuildFile; fileRef = A756C30DA8FE24B577DE8425F7A97545 /* Compiler.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		66FC6D6B535D41DF50C3C9DF7F1AFAA7 /* KSString.c in Sources */ = {isa = PBXBuildFile; fileRef = 31DECE9691136D194EF56DA2A1304994 /* KSString.c */; };
+		67D1B65B78BC36F723E972A06C5B26E5 /* KSFileUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 89859EA646301ECF9CED0FC48DCACDE2 /* KSFileUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		686646DC98B6708CBC172C9E19B87520 /* AlignOf.h in Headers */ = {isa = PBXBuildFile; fileRef = F1423757A234DBAEBDAA4905019B6D99 /* AlignOf.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		693E4538609E95282B6AE1BAB648EDFA /* NSString+Demangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 796375E47032EF55BF732590411AF40E /* NSString+Demangle.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6A5E9B7EED9E71557FC796906E03E0B6 /* BugsnagCollections.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A0476C02C83660423A14602A327F165 /* BugsnagCollections.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6C0ACDB35212E7BE6DE3C86374F8C703 /* KSArchSpecific.h in Headers */ = {isa = PBXBuildFile; fileRef = 976B9A39E2D3963265B1A6FA6577C6B1 /* KSArchSpecific.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D83D17E10B39593D57D3E61EE718132 /* KSCrashState.c in Sources */ = {isa = PBXBuildFile; fileRef = 5ED331778B14FEA8BE82A6A3B008A5B4 /* KSCrashState.c */; };
+		6E8CDAA71E3AB2AACDDC5668D6E2328C /* KSSafeCollections.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DBC51E52414F63A3453E12EEE282F28 /* KSSafeCollections.m */; };
+		6ECD0CA76C329562D67BB1E6FCC920A1 /* ACSimulatorRemoteNotificationsService.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A3131860B38DA6E6430ECDA12A7B0FC /* ACSimulatorRemoteNotificationsService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FBDFD8B775E7E9400C70E1B18651C8D /* KSCrashSentry_CPPException.mm in Sources */ = {isa = PBXBuildFile; fileRef = D040E3595AFBFD70484CEB7C6D5B8D2C /* KSCrashSentry_CPPException.mm */; };
+		7326BBBC1BECE80A8E463B7F508F6AAE /* SimulatorRemoteNotifications-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 968F3A516ADAAEFD2959EE7485314287 /* SimulatorRemoteNotifications-dummy.m */; };
+		75EC9F4766C091CA3C1603E51F78D808 /* Optional.h in Headers */ = {isa = PBXBuildFile; fileRef = DAF1CD3CF82055F5A3A4C03DCED9DD27 /* Optional.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		797D3AFF8F28A52963C96121179A3F06 /* KSCrashSentry_NSException.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F30CC07C38695CB70CD2C5E6072017B /* KSCrashSentry_NSException.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		79AF8E586450D7D77BAC35F9F5CB204C /* Bugsnag.m in Sources */ = {isa = PBXBuildFile; fileRef = 666CDC4ED6BA648BD89A5616E230C18B /* Bugsnag.m */; };
+		7A3FC2ACDAC1760F0E3C015CBDFD1766 /* BugsnagLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DBE1C2B7BED57C0ACD4E9642A833AC8 /* BugsnagLogger.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7A4D4DF27C1A245F95245D8F603236E2 /* BugsnagConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = D23DCCE712D9B57861434C43048A0929 /* BugsnagConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EC21CB1DB252CFB981422E3A647D3C7 /* KSCrashReportFilterCompletion.h in Headers */ = {isa = PBXBuildFile; fileRef = 49D080D5409440AA290F215451869582 /* KSCrashReportFilterCompletion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80CD8C6833E71C97B40BA617CC117174 /* NSDictionary+Merge.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DDBBEB331B7B301F8A905BECFD73E95 /* NSDictionary+Merge.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		81A0386EEC86F721BFEF722FFCF87850 /* KSCrashReportStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 54AA8F2E41713CA9ABB395DD6F6F1C3C /* KSCrashReportStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		823AE2914A3815D6B5DEBDC5E09656BC /* Punycode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AAA3BECDC1B6F76430C21FB87052A557 /* Punycode.cpp */; };
+		84577EA936ABCD61304A1CFAC356CC72 /* KSZombie.h in Headers */ = {isa = PBXBuildFile; fileRef = 867CED6FCBDA532EDAB4EDB0D6F2241C /* KSZombie.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		849AA85632B727E34F767C99C35B3FFA /* KSJSONCodecObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C6793B86493041CBF28C2E950E6BE5 /* KSJSONCodecObjC.m */; };
+		8577D01071513A83C2BE0B628D910F49 /* KSBacktrace.c in Sources */ = {isa = PBXBuildFile; fileRef = 685077A80DD8E7F8F22F4DD27246FF36 /* KSBacktrace.c */; };
+		877CBD5E3733C56617BC21BB887F7E3B /* KSObjCApple.h in Headers */ = {isa = PBXBuildFile; fileRef = 524D8D8A126A6CAF7E5917C4F9F99A10 /* KSObjCApple.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		87AA7928AF5544B4226E02A6477352E8 /* Punycode.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C6398DD26EA75A6B6A809B40B3853DA /* Punycode.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8864DA0B7A8AD9CE5CB604BD19394885 /* KSCrashC.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A4573DAED60D5C4FAF17567086937D9 /* KSCrashC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A70D2AD2E9EFD5A8372215525FE278B /* KSCrashSentry_NSException.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE0BC48AC46BEAA8B20A41006AA8A68 /* KSCrashSentry_NSException.m */; };
+		8C3BF6526B79F6EAC681CCA7BE12ED5C /* KSBacktrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 161B80B39167E120C1EC74654E824552 /* KSBacktrace.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9156408288BD8926FD1E0B396062D10D /* BugsnagMetaData.h in Headers */ = {isa = PBXBuildFile; fileRef = AD738C9681FABE94F36E6CFDC8FD5545 /* BugsnagMetaData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9193F199AE00593088A4B27F55F421BE /* RFC3339DateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 35062A7B2F4F342FA052B5180AF4271B /* RFC3339DateTool.m */; };
+		952452F2312D5448B28DCD7BB49C8BF3 /* KSMachApple.h in Headers */ = {isa = PBXBuildFile; fileRef = A71CC29F85942FF79E79779DBAC637F5 /* KSMachApple.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		989883A3EE96B8B7D7CFAF53D58101A0 /* KSSystemInfoC.h in Headers */ = {isa = PBXBuildFile; fileRef = EAAFF7A9B7A876A778899E210622BF03 /* KSSystemInfoC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98C1E204DA5B7C6129EFD3DD292E0476 /* KSCrashCallCompletion.m in Sources */ = {isa = PBXBuildFile; fileRef = B0161069B3D339E4F3167512B0B43009 /* KSCrashCallCompletion.m */; };
+		9B0A76DE8AFED967A0757A1C145B6B4C /* KSCrashAdvanced.h in Headers */ = {isa = PBXBuildFile; fileRef = 07BC1F111391C371D07B86DC3343B76E /* KSCrashAdvanced.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C40952B2827198CB73784B191262D85 /* KSCrashReportWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = D408F98B33A4EB42340C2C47E68FA215 /* KSCrashReportWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E90B076E16086105944B45CBBFA2CDF /* KSCrashSentry_MachException.c in Sources */ = {isa = PBXBuildFile; fileRef = 6417A95825E64E9C9FC986945BABE69D /* KSCrashSentry_MachException.c */; };
+		A105533BFD68A03CFBE694F0F468A671 /* KSMach_x86_32.c in Sources */ = {isa = PBXBuildFile; fileRef = 37CD1C9F0AD7305DE76C08FF629224A3 /* KSMach_x86_32.c */; };
+		A235E3D1753D6BAB7648D0204635CE39 /* KSCrashDoctor.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F86C0D0CB1C1E7AE709A7D42CC9C4BD /* KSCrashDoctor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A505E22401548CA2714EA802DA450CF7 /* KSCrashC.c in Sources */ = {isa = PBXBuildFile; fileRef = F6A82239DDCA97185DD1F2EEB8C05A74 /* KSCrashC.c */; };
+		A6592E695B9ABFA1203EC4DA98D58200 /* KSCrashType.c in Sources */ = {isa = PBXBuildFile; fileRef = 661648BBDC68C691F0C4CD4DC45D485A /* KSCrashType.c */; };
+		A65A0FB3D1C4559839C20921C2966D1E /* KSSignalInfo.c in Sources */ = {isa = PBXBuildFile; fileRef = 2DFD210D3D9BF8F4EB9A9F59C6ECC44C /* KSSignalInfo.c */; };
+		A8D1B82948B7EF334C9B09AD7E71F529 /* type_traits.h in Headers */ = {isa = PBXBuildFile; fileRef = B657F209F00D7A3A3A9A7026B57EC66D /* type_traits.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A91587BB9ACEB88C822E6AB19D0E570C /* KSCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 5566AC2C8FCF5B0AB12F049D41C0D6F4 /* KSCrash.m */; };
+		A9E3C40DE192B0807C8D69F9C4CACC3D /* KSJSONCodecObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EB7A17154EFEA024096BA352277A375 /* KSJSONCodecObjC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAB24F20C649510A17E688AF122DBED5 /* KSObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = 320DC7A4121A28A4C83E91AE51987F34 /* KSObjC.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		ADD161130000BDC9255BDADFC26880B0 /* KSCrashReportVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C556072BED741565F9DB973E9883A57 /* KSCrashReportVersion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF7543FEEF89B0EF95EC1ADA37FB1881 /* KSZombie.c in Sources */ = {isa = PBXBuildFile; fileRef = ADECB4B4414FD97529E500469ADC27A8 /* KSZombie.c */; };
+		B25989A32EC65BEFBC333138E5FBCDA2 /* KSSysCtl.h in Headers */ = {isa = PBXBuildFile; fileRef = BF00D14DD404BBA6666078104F974CB6 /* KSSysCtl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B4992DBB8CC07CD3350D109D0808D4B7 /* BugsnagSink.h in Headers */ = {isa = PBXBuildFile; fileRef = 581A874171630B2B6799A7C4224271D0 /* BugsnagSink.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B576187CC9C039E5CBBB147DBEB6ECE3 /* KSJSONCodec.c in Sources */ = {isa = PBXBuildFile; fileRef = FC0BE4074D92BEBC39671CF75E4DBD43 /* KSJSONCodec.c */; };
+		B974382C524A9CE0AA1BF25358339192 /* KSBacktrace_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 413D93BF1E3665F401C79AEC11A93325 /* KSBacktrace_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BB16FFA24B807AB235F95AC81AA1BEFB /* KSMach_Arm.c in Sources */ = {isa = PBXBuildFile; fileRef = 977FA63CBC43B8EF9AE274B647FCF714 /* KSMach_Arm.c */; };
+		BB2FAD242E4476D3020C9F8E07868F1C /* KSSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 13AD4EDE0AEC5D37E435D1C9D582B936 /* KSSingleton.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BD79C9F3096A7EB9206606392D7DBCD8 /* KSCrashSentry_Signal.c in Sources */ = {isa = PBXBuildFile; fileRef = 9156C026C7B3D3D720226A2D5C2B3CF8 /* KSCrashSentry_Signal.c */; };
+		BE94087E75EB5A31847385E10CC5D056 /* LLVM.h in Headers */ = {isa = PBXBuildFile; fileRef = ED38ADE12CF347E508D6D932515203E9 /* LLVM.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BFCD666BCB066C2769331BF5111C84D8 /* SwiftStrings.h in Headers */ = {isa = PBXBuildFile; fileRef = EC8C39F17DC4A82085081DC1BFD2B419 /* SwiftStrings.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BFD093E101EF6B8595BB13957917F92A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		C0CD0160EBE0481DA772CA8577EBFA8C /* BugsnagCrashReport.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DE5617613FFCC8AFBD2934705592F1D /* BugsnagCrashReport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1ACCAF45071F0259881901B5C01D2A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		C33C29BE25E52589D2A2ED26D1D4C9E0 /* KSCrashSentry_Deadlock.h in Headers */ = {isa = PBXBuildFile; fileRef = E944A856AD043710691DD7343A4F27A0 /* KSCrashSentry_Deadlock.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C3FCD92AD4403EC5429B6E081075B2FE /* Casting.h in Headers */ = {isa = PBXBuildFile; fileRef = 35EC461D76B4CBDE53865A30F0D1D41A /* Casting.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C4B4E8F32653571BC0DBBF80DB45DD33 /* KSString.h in Headers */ = {isa = PBXBuildFile; fileRef = 77855FB1735E4B0D542D859DADCD6A43 /* KSString.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C4D58155F831225AC00734BECDC89B58 /* KSMach_x86_64.c in Sources */ = {isa = PBXBuildFile; fileRef = EB88C81ED35EC9A8E83F8E33E486B027 /* KSMach_x86_64.c */; };
+		C6F192CB10B2A2F9170A8C52C504237D /* BugsnagSink.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA7161EB78CF0EDE2695294FCFA31EA /* BugsnagSink.m */; };
+		C7DC911CAA5F3289848C4DF583704661 /* KSCrashReportFields.h in Headers */ = {isa = PBXBuildFile; fileRef = 9517E38DDDBD2313BCE4EA1F937911E9 /* KSCrashReportFields.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9AC913D944CE32C383F88C9358AE990 /* KSCrashContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 284171A27D964F4B7FD9E1493B4C739F /* KSCrashContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB1CC72B6BD3461C607087131771A511 /* None.h in Headers */ = {isa = PBXBuildFile; fileRef = F58FBB45C27390E53BC70C704FBC17FF /* None.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CF3EE7244088BDC47E8F4845A837781B /* KSSystemCapabilities.h in Headers */ = {isa = PBXBuildFile; fileRef = ACA79959AB7661270BF57C0F3AC6F391 /* KSSystemCapabilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D3769D51031B9601F979269B955418EB /* KSCrashSentry_User.c in Sources */ = {isa = PBXBuildFile; fileRef = 86B43A1D64DCE187EFE6A11BC0D6EB58 /* KSCrashSentry_User.c */; };
+		D56FB690865A714D88CAA6BF8BE3AD1C /* BugsnagBreadcrumb.m in Sources */ = {isa = PBXBuildFile; fileRef = 828C0B94B998A2B45A94C4BF8248F343 /* BugsnagBreadcrumb.m */; };
+		D60CDBC51166E043739DBE74CFF84837 /* Demangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEB9D7037F2A37D4301C83CBFE0347BE /* Demangle.cpp */; };
+		DA4E16C87DEC46E3289BBA5B8E6D4FC3 /* BugsnagNotifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B33A74371CA4B1A63AD89AAC73C5577 /* BugsnagNotifier.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DB4419ED30760BEF8899F163D1B98C13 /* NSError+SimpleConstructor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B06AAE936DD7F0437715D50329352BE /* NSError+SimpleConstructor.m */; };
+		DF1872AEFDE41C54C611E2C66D9D7F32 /* KSCrashCallCompletion.h in Headers */ = {isa = PBXBuildFile; fileRef = 16A47A46D99756ED4E446ABCDBCC991B /* KSCrashCallCompletion.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E9FDDBCDFF528D93C3018FD6DC25FB9A /* KSCrashSentry_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 797F33A65EBA4EEC3DFC261B4F3DA698 /* KSCrashSentry_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EC9392778077D3A287F0CF8DA7B6041E /* BSGKSCrashReportWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = A19AC89F45468C36CA5C509259DDFFE9 /* BSGKSCrashReportWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED773C92915CE91583C06C2DC45B5F89 /* BugsnagCollections.m in Sources */ = {isa = PBXBuildFile; fileRef = 476992E0EA0EF70F7C2157C1DF056D15 /* BugsnagCollections.m */; };
+		F08C28A607CFCF678105CE803E1CB9F9 /* BugsnagMetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E89FC0D1C67A43B08884D34C5BFF81 /* BugsnagMetaData.m */; };
+		F1B8F277833BB988645DB87AF1E73602 /* RFC3339DateTool.h in Headers */ = {isa = PBXBuildFile; fileRef = EE81C5CF1D99E93BE0665174411C243E /* RFC3339DateTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F31E0CEB98743AB93D6CCA9732BCC32F /* NSError+SimpleConstructor.h in Headers */ = {isa = PBXBuildFile; fileRef = 4455172FBCF7478E52703F0C6AAD38A4 /* NSError+SimpleConstructor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3C41DAA4D2E1D72083D5A252FADDD61 /* KSCrashSentry_Deadlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 884DDB552F1B7CB34D3591A90D43D587 /* KSCrashSentry_Deadlock.m */; };
+		FB767526894D283E6B1393F6B704C76C /* KSCrash.h in Headers */ = {isa = PBXBuildFile; fileRef = AA99BFC456F2731048F41ABEA2F34C06 /* KSCrash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC6427AF105AE17424010F86EE959B6B /* KSFileUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 1E955F1822832C4F4D5C098A4542868A /* KSFileUtils.c */; };
+		FDB63EC24F242D48C4230FADED5CCCE2 /* KSCrashReportStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 67E179036B643760C4E6DB25D945FC2C /* KSCrashReportStore.m */; };
+		FF51C024C0CFF4124724E054C465088D /* KSCrashSentry_User.h in Headers */ = {isa = PBXBuildFile; fileRef = 800C527C47EC8B440862ED9A8D76D283 /* KSCrashSentry_User.h */; settings = {ATTRIBUTES = (Project, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		431E49CCFFB5A4A623723331278EEA44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F62F3D827DF2BA99357570716070361;
+			remoteInfo = KSCrash;
+		};
+		51EB215AC5B24B90E37CC8242F8C6124 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F62F3D827DF2BA99357570716070361;
+			remoteInfo = KSCrash;
+		};
+		6CC9F093475DDD5CF0C8EA9A723BC253 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FA4EFF791A52C9C9F93C85356727BDB;
+			remoteInfo = SimulatorRemoteNotifications;
+		};
+		84F09B52099DACB3159C17CA7D56C9AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D314CC2257EF00D565AADC7BB6CE1DFC;
+			remoteInfo = Bugsnag;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		058020125C9E14A46034F1622B493AB9 /* Bugsnag.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Bugsnag.xcconfig; sourceTree = "<group>"; };
+		06B2461A1E95F14C4F544D82C7A812F0 /* KSCrashSentry.c */ = {isa = PBXFileReference; includeInIndex = 1; name = KSCrashSentry.c; path = Source/KSCrash/Recording/Sentry/KSCrashSentry.c; sourceTree = "<group>"; };
+		07BC1F111391C371D07B86DC3343B76E /* KSCrashAdvanced.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSCrashAdvanced.h; path = Source/KSCrash/Recording/KSCrashAdvanced.h; sourceTree = "<group>"; };
+		0CC52DFBD154C84788210F5D58C4EF8B /* KSCrash-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KSCrash-dummy.m"; sourceTree = "<group>"; };
+		0F4F82A4B32E422ACAEC558C38AB4572 /* SimulatorRemoteNotifications.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimulatorRemoteNotifications.xcconfig; sourceTree = "<group>"; };
+		0FA7161EB78CF0EDE2695294FCFA31EA /* BugsnagSink.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BugsnagSink.m; path = Source/BugsnagSink.m; sourceTree = "<group>"; };
+		12E64C30D332C54F04818DC58342056F /* libPods-Sample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Sample.a"; path = "libPods-Sample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13AD4EDE0AEC5D37E435D1C9D582B936 /* KSSingleton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSSingleton.h; path = Source/KSCrash/Recording/Tools/KSSingleton.h; sourceTree = "<group>"; };
+		15B47BCF65F34974DD45E18D5DF2F953 /* KSCrashSentry_MachException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSCrashSentry_MachException.h; path = Source/KSCrash/Recording/Sentry/KSCrashSentry_MachException.h; sourceTree = "<group>"; };
+		161B80B39167E120C1EC74654E824552 /* KSBacktrace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSBacktrace.h; path = Source/KSCrash/Recording/Tools/KSBacktrace.h; sourceTree = "<group>"; };
+		16A47A46D99756ED4E446ABCDBCC991B /* KSCrashCallCompletion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSCrashCallCompletion.h; path = Source/KSCrash/Recording/Tools/KSCrashCallCompletion.h; sourceTree = "<group>"; };
+		1796C7CB460BF5C5BEC709ABF7316A91 /* Pods-Sample.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sample.staging.xcconfig"; sourceTree = "<group>"; };
+		186E02EED52AAE24F4682BA75269A176 /* libBugsnag.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libBugsnag.a; path = libBugsnag.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		19C123554B5B0B7CDC90FF22A46BBA26 /* KSCrashReport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSCrashReport.h; path = Source/KSCrash/Recording/KSCrashReport.h; sourceTree = "<group>"; };
+		1A028937006AEB288FEAF8150A18CA8F /* Pods-Sample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Sample-acknowledgements.plist"; sourceTree = "<group>"; };
+		1C9AA40EE451BC91C664ACA835CB94EE /* KSSafeCollections.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSSafeCollections.h; path = Source/KSCrash/Recording/Tools/KSSafeCollections.h; sourceTree = "<group>"; };
+		1E955F1822832C4F4D5C098A4542868A /* KSFileUtils.c */ = {isa = PBXFileReference; includeInIndex = 1; name = KSFileUtils.c; path = Source/KSCrash/Recording/Tools/KSFileUtils.c; sourceTree = "<group>"; };
+		1FBDE4E55F4534166DAC476A264DE0B0 /* Malloc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Malloc.h; path = Source/KSCrash/swift/Basic/Malloc.h; sourceTree = "<group>"; };
+		20D2CF2C9E3C81D203C45B83609D5B15 /* KSMach.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSMach.h; path = Source/KSCrash/Recording/Tools/KSMach.h; sourceTree = "<group>"; };
+		2599DFEB83388F5278FAF5701E5CDE8E /* KSCrashType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSCrashType.h; path = Source/KSCrash/Recording/KSCrashType.h; sourceTree = "<group>"; };
+		284171A27D964F4B7FD9E1493B4C739F /* KSCrashContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSCrashContext.h; path = Source/KSCrash/Recording/KSCrashContext.h; sourceTree = "<group>"; };
+		28986A8E40E61761B326085BF3B4ED76 /* BugsnagNotifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BugsnagNotifier.m; path = Source/BugsnagNotifier.m; sourceTree = "<group>"; };
+		2B06AAE936DD7F0437715D50329352BE /* NSError+SimpleConstructor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSError+SimpleConstructor.m"; path = "Source/KSCrash/Recording/Tools/NSError+SimpleConstructor.m"; sourceTree = "<group>"; };
+		2DFD210D3D9BF8F4EB9A9F59C6ECC44C /* KSSignalInfo.c */ = {isa = PBXFileReference; includeInIndex = 1; name = KSSignalInfo.c; path = Source/KSCrash/Recording/Tools/KSSignalInfo.c; sourceTree = "<group>"; };
+		2F86C0D0CB1C1E7AE709A7D42CC9C4BD /* KSCrashDoctor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSCrashDoctor.h; path = Source/KSCrash/Recording/KSCrashDoctor.h; sourceTree = "<group>"; };
+		31DECE9691136D194EF56DA2A1304994 /* KSString.c */ = {isa = PBXFileReference; includeInIndex = 1; name = KSString.c; path = Source/KSCrash/Recording/Tools/KSString.c; sourceTree = "<group>"; };
+		320DC7A4121A28A4C83E91AE51987F34 /* KSObjC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSObjC.h; path = Source/KSCrash/Recording/Tools/KSObjC.h; sourceTree = "<group>"; };
+		35062A7B2F4F342FA052B5180AF4271B /* RFC3339DateTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RFC3339DateTool.m; path = Source/KSCrash/Recording/Tools/RFC3339DateTool.m; sourceTree = "<group>"; };
+		35EC461D76B4CBDE53865A30F0D1D41A /* Casting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Casting.h; path = Source/KSCrash/llvm/Support/Casting.h; sourceTree = "<group>"; };
+		37CD1C9F0AD7305DE76C08FF629224A3 /* KSMach_x86_32.c */ = {isa = PBXFileReference; includeInIndex = 1; name = KSMach_x86_32.c; path = Source/KSCrash/Recording/Tools/KSMach_x86_32.c; sourceTree = "<group>"; };
+		391AB8CED1681B6B2E8E81EB3487A437 /* Pods-Sample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Sample-dummy.m"; sourceTree = "<group>"; };
+		3A0476C02C83660423A14602A327F165 /* BugsnagCollections.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BugsnagCollections.h; path = Source/BugsnagCollections.h; sourceTree = "<group>"; };
+		3DBA485E70E6C465C8D98AC207BD05C0 /* BugsnagConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BugsnagConfiguration.m; path = Source/BugsnagConfiguration.m; sourceTree = "<group>"; };
+		3F14CB6C28F4812252C9BFA24F8979EE /* KSCrashReportFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSCrashReportFilter.h; path = Source/KSCrash/Reporting/Filters/KSCrashReportFilter.h; sourceTree = "<group>"; };
+		413D93BF1E3665F401C79AEC11A93325 /* KSBacktrace_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSBacktrace_Private.h; path = Source/KSCrash/Recording/Tools/KSBacktrace_Private.h; sourceTree = "<group>"; };
+		4455172FBCF7478E52703F0C6AAD38A4 /* NSError+SimpleConstructor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSError+SimpleConstructor.h"; path = "Source/KSCrash/Recording/Tools/NSError+SimpleConstructor.h"; sourceTree = "<group>"; };
+		476992E0EA0EF70F7C2157C1DF056D15 /* BugsnagCollections.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BugsnagCollections.m; path = Source/BugsnagCollections.m; sourceTree = "<group>"; };
+		48F33F82CC2DC3D2C737E772AAFEDCA8 /* KSDynamicLinker.c */ = {isa = PBXFileReference; includeInIndex = 1; name = KSDynamicLinker.c; path = Source/KSCrash/Recording/Tools/KSDynamicLinker.c; sourceTree = "<group>"; };
+		49D080D5409440AA290F215451869582 /* KSCrashReportFilterCompletion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSCrashReportFilterCompletion.h; path = Source/KSCrash/Reporting/Filters/KSCrashReportFilterCompletion.h; sourceTree = "<group>"; };
+		4AE0BC48AC46BEAA8B20A41006AA8A68 /* KSCrashSentry_NSException.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KSCrashSentry_NSException.m; path = Source/KSCrash/Recording/Sentry/KSCrashSentry_NSException.m; sourceTree = "<group>"; };
+		4C6398DD26EA75A6B6A809B40B3853DA /* Punycode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Punycode.h; path = Source/KSCrash/swift/Basic/Punycode.h; sourceTree = "<group>"; };
+		4E31839A88F3904FAA9C5790DB1D86CE /* KSSystemInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSSystemInfo.h; path = Source/KSCrash/Recording/KSSystemInfo.h; sourceTree = "<group>"; };
+		4F30CC07C38695CB70CD2C5E6072017B /* KSCrashSentry_NSException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSCrashSentry_NSException.h; path = Source/KSCrash/Recording/Sentry/KSCrashSentry_NSException.h; sourceTree = "<group>"; };
+		4F653690B0854F08104DEB27F28BF44A /* KSJSONCodec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSJSONCodec.h; path = Source/KSCrash/Recording/Tools/KSJSONCodec.h; sourceTree = "<group>"; };
+		524D8D8A126A6CAF7E5917C4F9F99A10 /* KSObjCApple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSObjCApple.h; path = Source/KSCrash/Recording/Tools/KSObjCApple.h; sourceTree = "<group>"; };
+		54AA8F2E41713CA9ABB395DD6F6F1C3C /* KSCrashReportStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSCrashReportStore.h; path = Source/KSCrash/Recording/KSCrashReportStore.h; sourceTree = "<group>"; };
+		54DC568F212AEBF9DFBD8692A7FF4A17 /* NSString+Demangle.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = "NSString+Demangle.mm"; path = "Source/KSCrash/Recording/Tools/NSString+Demangle.mm"; sourceTree = "<group>"; };
+		5566AC2C8FCF5B0AB12F049D41C0D6F4 /* KSCrash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KSCrash.m; path = Source/KSCrash/Recording/KSCrash.m; sourceTree = "<group>"; };
+		581A874171630B2B6799A7C4224271D0 /* BugsnagSink.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BugsnagSink.h; path = Source/BugsnagSink.h; sourceTree = "<group>"; };
+		5DBC51E52414F63A3453E12EEE282F28 /* KSSafeCollections.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KSSafeCollections.m; path = Source/KSCrash/Recording/Tools/KSSafeCollections.m; sourceTree = "<group>"; };
+		5ED331778B14FEA8BE82A6A3B008A5B4 /* KSCrashState.c */ = {isa = PBXFileReference; includeInIndex = 1; name = KSCrashState.c; path = Source/KSCrash/Recording/KSCrashState.c; sourceTree = "<group>"; };
+		5F002A25E1B4829C1035E00B8565818B /* KSCrash-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KSCrash-prefix.pch"; sourceTree = "<group>"; };
+		5F62725D18D725CEADDEEECADEECC9FF /* BSGSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BSGSerialization.m; path = Source/BSGSerialization.m; sourceTree = "<group>"; };
+		6417A95825E64E9C9FC986945BABE69D /* KSCrashSentry_MachException.c */ = {isa = PBXFileReference; includeInIndex = 1; name = KSCrashSentry_MachException.c; path = Source/KSCrash/Recording/Sentry/KSCrashSentry_MachException.c; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		661648BBDC68C691F0C4CD4DC45D485A /* KSCrashType.c */ = {isa = PBXFileReference; includeInIndex = 1; name = KSCrashType.c; path = Source/KSCrash/Recording/KSCrashType.c; sourceTree = "<group>"; };
+		666CDC4ED6BA648BD89A5616E230C18B /* Bugsnag.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Bugsnag.m; path = Source/Bugsnag.m; sourceTree = "<group>"; };
+		67E179036B643760C4E6DB25D945FC2C /* KSCrashReportStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KSCrashReportStore.m; path = Source/KSCrash/Recording/KSCrashReportStore.m; sourceTree = "<group>"; };
+		685077A80DD8E7F8F22F4DD27246FF36 /* KSBacktrace.c */ = {isa = PBXFileReference; includeInIndex = 1; name = KSBacktrace.c; path = Source/KSCrash/Recording/Tools/KSBacktrace.c; sourceTree = "<group>"; };
+		6EB7A17154EFEA024096BA352277A375 /* KSJSONCodecObjC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSJSONCodecObjC.h; path = Source/KSCrash/Recording/Tools/KSJSONCodecObjC.h; sourceTree = "<group>"; };
+		6F5DEED9E5E113B8FE9C2A412F7F7502 /* KSCrashSentry_Signal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSCrashSentry_Signal.h; path = Source/KSCrash/Recording/Sentry/KSCrashSentry_Signal.h; sourceTree = "<group>"; };
+		7308259D31E10B17A343E433D7FC9B8A /* Demangle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Demangle.h; path = Source/KSCrash/swift/Basic/Demangle.h; sourceTree = "<group>"; };
+		7561DE9B79B427A46860C33670F84D4B /* KSMach.c */ = {isa = PBXFileReference; includeInIndex = 1; name = KSMach.c; path = Source/KSCrash/Recording/Tools/KSMach.c; sourceTree = "<group>"; };
+		77855FB1735E4B0D542D859DADCD6A43 /* KSString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSString.h; path = Source/KSCrash/Recording/Tools/KSString.h; sourceTree = "<group>"; };
+		795B196042536E0D0A519920940F1D06 /* Pods-Sample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Sample-frameworks.sh"; sourceTree = "<group>"; };
+		796375E47032EF55BF732590411AF40E /* NSString+Demangle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Demangle.h"; path = "Source/KSCrash/Recording/Tools/NSString+Demangle.h"; sourceTree = "<group>"; };
+		797F33A65EBA4EEC3DFC261B4F3DA698 /* KSCrashSentry_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSCrashSentry_Private.h; path = Source/KSCrash/Recording/Sentry/KSCrashSentry_Private.h; sourceTree = "<group>"; };
+		7A4573DAED60D5C4FAF17567086937D9 /* KSCrashC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSCrashC.h; path = Source/KSCrash/Recording/KSCrashC.h; sourceTree = "<group>"; };
+		7C556072BED741565F9DB973E9883A57 /* KSCrashReportVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSCrashReportVersion.h; path = Source/KSCrash/Recording/KSCrashReportVersion.h; sourceTree = "<group>"; };
+		7DE5617613FFCC8AFBD2934705592F1D /* BugsnagCrashReport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BugsnagCrashReport.h; path = Source/BugsnagCrashReport.h; sourceTree = "<group>"; };
+		7E9FCE8306942EE7599887EC9416EAFA /* KSLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSLogger.h; path = Source/KSCrash/Recording/Tools/KSLogger.h; sourceTree = "<group>"; };
+		7F661BF4BF692ED22026B86C3A1F5F1A /* Pods-Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sample.debug.xcconfig"; sourceTree = "<group>"; };
+		800C527C47EC8B440862ED9A8D76D283 /* KSCrashSentry_User.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSCrashSentry_User.h; path = Source/KSCrash/Recording/Sentry/KSCrashSentry_User.h; sourceTree = "<group>"; };
+		828C0B94B998A2B45A94C4BF8248F343 /* BugsnagBreadcrumb.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BugsnagBreadcrumb.m; path = Source/BugsnagBreadcrumb.m; sourceTree = "<group>"; };
+		82A6F5851E7985AD668239931DA0355B /* KSDynamicLinker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSDynamicLinker.h; path = Source/KSCrash/Recording/Tools/KSDynamicLinker.h; sourceTree = "<group>"; };
+		867CED6FCBDA532EDAB4EDB0D6F2241C /* KSZombie.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSZombie.h; path = Source/KSCrash/Recording/Tools/KSZombie.h; sourceTree = "<group>"; };
+		86B43A1D64DCE187EFE6A11BC0D6EB58 /* KSCrashSentry_User.c */ = {isa = PBXFileReference; includeInIndex = 1; name = KSCrashSentry_User.c; path = Source/KSCrash/Recording/Sentry/KSCrashSentry_User.c; sourceTree = "<group>"; };
+		884DDB552F1B7CB34D3591A90D43D587 /* KSCrashSentry_Deadlock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KSCrashSentry_Deadlock.m; path = Source/KSCrash/Recording/Sentry/KSCrashSentry_Deadlock.m; sourceTree = "<group>"; };
+		89859EA646301ECF9CED0FC48DCACDE2 /* KSFileUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSFileUtils.h; path = Source/KSCrash/Recording/Tools/KSFileUtils.h; sourceTree = "<group>"; };
+		8A3131860B38DA6E6430ECDA12A7B0FC /* ACSimulatorRemoteNotificationsService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACSimulatorRemoteNotificationsService.h; path = SimulatorRemoteNotifications/ACSimulatorRemoteNotificationsService.h; sourceTree = "<group>"; };
+		8B33A74371CA4B1A63AD89AAC73C5577 /* BugsnagNotifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BugsnagNotifier.h; path = Source/BugsnagNotifier.h; sourceTree = "<group>"; };
+		8C4B474935FFDAC82B557F3BE257B878 /* KSCrashReport.c */ = {isa = PBXFileReference; includeInIndex = 1; name = KSCrashReport.c; path = Source/KSCrash/Recording/KSCrashReport.c; sourceTree = "<group>"; };
+		8DBE1C2B7BED57C0ACD4E9642A833AC8 /* BugsnagLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BugsnagLogger.h; path = Source/BugsnagLogger.h; sourceTree = "<group>"; };
+		8E1B75DEC4893BA97B35662ED92CC18E /* KSSignalInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSSignalInfo.h; path = Source/KSCrash/Recording/Tools/KSSignalInfo.h; sourceTree = "<group>"; };
+		9156C026C7B3D3D720226A2D5C2B3CF8 /* KSCrashSentry_Signal.c */ = {isa = PBXFileReference; includeInIndex = 1; name = KSCrashSentry_Signal.c; path = Source/KSCrash/Recording/Sentry/KSCrashSentry_Signal.c; sourceTree = "<group>"; };
+		9184B0B29098BA67B31324A63B6E626B /* Pods-Sample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Sample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94E326967E8173F4681C8E3BFC5E5A55 /* libSimulatorRemoteNotifications.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSimulatorRemoteNotifications.a; path = libSimulatorRemoteNotifications.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9517E38DDDBD2313BCE4EA1F937911E9 /* KSCrashReportFields.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSCrashReportFields.h; path = Source/KSCrash/Recording/KSCrashReportFields.h; sourceTree = "<group>"; };
+		95820AFE9D914AFA24E9B13CAAF2110A /* KSCrashState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSCrashState.h; path = Source/KSCrash/Recording/KSCrashState.h; sourceTree = "<group>"; };
+		968F3A516ADAAEFD2959EE7485314287 /* SimulatorRemoteNotifications-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SimulatorRemoteNotifications-dummy.m"; sourceTree = "<group>"; };
+		976B9A39E2D3963265B1A6FA6577C6B1 /* KSArchSpecific.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSArchSpecific.h; path = Source/KSCrash/Recording/Tools/KSArchSpecific.h; sourceTree = "<group>"; };
+		977FA63CBC43B8EF9AE274B647FCF714 /* KSMach_Arm.c */ = {isa = PBXFileReference; includeInIndex = 1; name = KSMach_Arm.c; path = Source/KSCrash/Recording/Tools/KSMach_Arm.c; sourceTree = "<group>"; };
+		98A0D550AC0E17DC2241F65822BF3F4B /* KSMach_Arm64.c */ = {isa = PBXFileReference; includeInIndex = 1; name = KSMach_Arm64.c; path = Source/KSCrash/Recording/Tools/KSMach_Arm64.c; sourceTree = "<group>"; };
+		9DDBBEB331B7B301F8A905BECFD73E95 /* NSDictionary+Merge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+Merge.h"; path = "Source/KSCrash/Recording/Tools/NSDictionary+Merge.h"; sourceTree = "<group>"; };
+		A19AC89F45468C36CA5C509259DDFFE9 /* BSGKSCrashReportWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSGKSCrashReportWriter.h; path = Source/BSGKSCrashReportWriter.h; sourceTree = "<group>"; };
+		A61EFB3237C227493679C6DCF9E70F92 /* NSDictionary+Merge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+Merge.m"; path = "Source/KSCrash/Recording/Tools/NSDictionary+Merge.m"; sourceTree = "<group>"; };
+		A71CC29F85942FF79E79779DBAC637F5 /* KSMachApple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSMachApple.h; path = Source/KSCrash/Recording/Tools/KSMachApple.h; sourceTree = "<group>"; };
+		A756C30DA8FE24B577DE8425F7A97545 /* Compiler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Compiler.h; path = Source/KSCrash/llvm/Support/Compiler.h; sourceTree = "<group>"; };
+		AA99BFC456F2731048F41ABEA2F34C06 /* KSCrash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSCrash.h; path = Source/KSCrash/Recording/KSCrash.h; sourceTree = "<group>"; };
+		AAA3BECDC1B6F76430C21FB87052A557 /* Punycode.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = Punycode.cpp; path = Source/KSCrash/swift/Basic/Punycode.cpp; sourceTree = "<group>"; };
+		ACA79959AB7661270BF57C0F3AC6F391 /* KSSystemCapabilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSSystemCapabilities.h; path = Source/KSCrash/Recording/KSSystemCapabilities.h; sourceTree = "<group>"; };
+		AD738C9681FABE94F36E6CFDC8FD5545 /* BugsnagMetaData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BugsnagMetaData.h; path = Source/BugsnagMetaData.h; sourceTree = "<group>"; };
+		ADECB4B4414FD97529E500469ADC27A8 /* KSZombie.c */ = {isa = PBXFileReference; includeInIndex = 1; name = KSZombie.c; path = Source/KSCrash/Recording/Tools/KSZombie.c; sourceTree = "<group>"; };
+		B0161069B3D339E4F3167512B0B43009 /* KSCrashCallCompletion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KSCrashCallCompletion.m; path = Source/KSCrash/Recording/Tools/KSCrashCallCompletion.m; sourceTree = "<group>"; };
+		B39D6D5A2231E8E079C234CFFC1A1922 /* KSSysCtl.c */ = {isa = PBXFileReference; includeInIndex = 1; name = KSSysCtl.c; path = Source/KSCrash/Recording/Tools/KSSysCtl.c; sourceTree = "<group>"; };
+		B657F209F00D7A3A3A9A7026B57EC66D /* type_traits.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = type_traits.h; path = Source/KSCrash/llvm/Support/type_traits.h; sourceTree = "<group>"; };
+		B78D173AC0657029C3BED0AA8507B95A /* DemangleNodes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DemangleNodes.h; path = Source/KSCrash/swift/Basic/DemangleNodes.h; sourceTree = "<group>"; };
+		B8903AD66ACB36AE07BF5DF7EE3D1639 /* Bugsnag-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bugsnag-prefix.pch"; sourceTree = "<group>"; };
+		B9D7E7E5B28E86FCF360C56FA188B93F /* Fallthrough.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Fallthrough.h; path = Source/KSCrash/swift/Basic/Fallthrough.h; sourceTree = "<group>"; };
+		BF00D14DD404BBA6666078104F974CB6 /* KSSysCtl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSSysCtl.h; path = Source/KSCrash/Recording/Tools/KSSysCtl.h; sourceTree = "<group>"; };
+		C5C978EEAA0C4E8E3742BD1206E45BCF /* KSCrashSentry_CPPException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSCrashSentry_CPPException.h; path = Source/KSCrash/Recording/Sentry/KSCrashSentry_CPPException.h; sourceTree = "<group>"; };
+		C7E89FC0D1C67A43B08884D34C5BFF81 /* BugsnagMetaData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BugsnagMetaData.m; path = Source/BugsnagMetaData.m; sourceTree = "<group>"; };
+		CA64E9AF4659CC4E1A9BB7632147CDF1 /* KSLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KSLogger.m; path = Source/KSCrash/Recording/Tools/KSLogger.m; sourceTree = "<group>"; };
+		CC3494BBACE77E41AFD2E06BE181D34D /* KSCrashSentry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSCrashSentry.h; path = Source/KSCrash/Recording/Sentry/KSCrashSentry.h; sourceTree = "<group>"; };
+		CE752F8B1D98B98225F66C7F4A58F00B /* UIApplication+SimulatorRemoteNotifications.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+SimulatorRemoteNotifications.h"; path = "SimulatorRemoteNotifications/UIApplication+SimulatorRemoteNotifications.h"; sourceTree = "<group>"; };
+		D040E3595AFBFD70484CEB7C6D5B8D2C /* KSCrashSentry_CPPException.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = KSCrashSentry_CPPException.mm; path = Source/KSCrash/Recording/Sentry/KSCrashSentry_CPPException.mm; sourceTree = "<group>"; };
+		D23DCCE712D9B57861434C43048A0929 /* BugsnagConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BugsnagConfiguration.h; path = Source/BugsnagConfiguration.h; sourceTree = "<group>"; };
+		D33D6700DEAF2CB47D458B739CFD0FF9 /* KSCrashDoctor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KSCrashDoctor.m; path = Source/KSCrash/Recording/KSCrashDoctor.m; sourceTree = "<group>"; };
+		D3C6793B86493041CBF28C2E950E6BE5 /* KSJSONCodecObjC.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KSJSONCodecObjC.m; path = Source/KSCrash/Recording/Tools/KSJSONCodecObjC.m; sourceTree = "<group>"; };
+		D408F98B33A4EB42340C2C47E68FA215 /* KSCrashReportWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSCrashReportWriter.h; path = Source/KSCrash/Recording/KSCrashReportWriter.h; sourceTree = "<group>"; };
+		D544F069C67486505179E184C33712D1 /* KSSystemInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KSSystemInfo.m; path = Source/KSCrash/Recording/KSSystemInfo.m; sourceTree = "<group>"; };
+		DA675A60A11A774FAFBC5E9E7D467067 /* BugsnagBreadcrumb.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BugsnagBreadcrumb.h; path = Source/BugsnagBreadcrumb.h; sourceTree = "<group>"; };
+		DAF1CD3CF82055F5A3A4C03DCED9DD27 /* Optional.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Optional.h; path = Source/KSCrash/llvm/ADT/Optional.h; sourceTree = "<group>"; };
+		DB4B0652506841939DCC015724DFB139 /* ACSimulatorRemoteNotificationsService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ACSimulatorRemoteNotificationsService.m; path = SimulatorRemoteNotifications/ACSimulatorRemoteNotificationsService.m; sourceTree = "<group>"; };
+		DEB9D7037F2A37D4301C83CBFE0347BE /* Demangle.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = Demangle.cpp; path = Source/KSCrash/swift/Basic/Demangle.cpp; sourceTree = "<group>"; };
+		DF2EC0F4000FDFEEBDD855F50123FFF4 /* BugsnagCrashReport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BugsnagCrashReport.m; path = Source/BugsnagCrashReport.m; sourceTree = "<group>"; };
+		E5052015560847FD666813B380E928CC /* SimulatorRemoteNotifications-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimulatorRemoteNotifications-prefix.pch"; sourceTree = "<group>"; };
+		E55B97A74D816525228905753674FC60 /* Pods-Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sample.release.xcconfig"; sourceTree = "<group>"; };
+		E944A856AD043710691DD7343A4F27A0 /* KSCrashSentry_Deadlock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSCrashSentry_Deadlock.h; path = Source/KSCrash/Recording/Sentry/KSCrashSentry_Deadlock.h; sourceTree = "<group>"; };
+		E97510E8DDCBC901C0BCE3F13B2579F9 /* Pods-Sample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Sample-resources.sh"; sourceTree = "<group>"; };
+		E9A17D42B2F2A085EA19F5908F9BF790 /* StringRef.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = StringRef.h; path = Source/KSCrash/llvm/ADT/StringRef.h; sourceTree = "<group>"; };
+		EA93093D4F3DDE555FD7F7289178F49A /* BSGSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSGSerialization.h; path = Source/BSGSerialization.h; sourceTree = "<group>"; };
+		EAAFF7A9B7A876A778899E210622BF03 /* KSSystemInfoC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KSSystemInfoC.h; path = Source/KSCrash/Recording/KSSystemInfoC.h; sourceTree = "<group>"; };
+		EB1C1684492A039F3B4D8856899D27CC /* Bugsnag-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Bugsnag-dummy.m"; sourceTree = "<group>"; };
+		EB88C81ED35EC9A8E83F8E33E486B027 /* KSMach_x86_64.c */ = {isa = PBXFileReference; includeInIndex = 1; name = KSMach_x86_64.c; path = Source/KSCrash/Recording/Tools/KSMach_x86_64.c; sourceTree = "<group>"; };
+		EC8C39F17DC4A82085081DC1BFD2B419 /* SwiftStrings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftStrings.h; path = Source/KSCrash/swift/SwiftStrings.h; sourceTree = "<group>"; };
+		ED38ADE12CF347E508D6D932515203E9 /* LLVM.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LLVM.h; path = Source/KSCrash/swift/Basic/LLVM.h; sourceTree = "<group>"; };
+		EE0D21D21030E2CAABAA9D80453E90A7 /* KSObjC.c */ = {isa = PBXFileReference; includeInIndex = 1; name = KSObjC.c; path = Source/KSCrash/Recording/Tools/KSObjC.c; sourceTree = "<group>"; };
+		EE81C5CF1D99E93BE0665174411C243E /* RFC3339DateTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RFC3339DateTool.h; path = Source/KSCrash/Recording/Tools/RFC3339DateTool.h; sourceTree = "<group>"; };
+		F1423757A234DBAEBDAA4905019B6D99 /* AlignOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AlignOf.h; path = Source/KSCrash/llvm/Support/AlignOf.h; sourceTree = "<group>"; };
+		F15FC9F6B20E63BB8D4B512DA72AE8D8 /* Bugsnag.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Bugsnag.h; path = Source/Bugsnag.h; sourceTree = "<group>"; };
+		F20AADFCA74E887E1B8EA147D1C3F6DD /* llvm-config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "llvm-config.h"; path = "Source/KSCrash/llvm/Config/llvm-config.h"; sourceTree = "<group>"; };
+		F58FBB45C27390E53BC70C704FBC17FF /* None.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = None.h; path = Source/KSCrash/llvm/ADT/None.h; sourceTree = "<group>"; };
+		F67D100364910CDA573C2271EA516F7C /* KSCrash.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KSCrash.xcconfig; sourceTree = "<group>"; };
+		F6A82239DDCA97185DD1F2EEB8C05A74 /* KSCrashC.c */ = {isa = PBXFileReference; includeInIndex = 1; name = KSCrashC.c; path = Source/KSCrash/Recording/KSCrashC.c; sourceTree = "<group>"; };
+		FA9C00BC5C0CA5075F7F69688C99768B /* UIApplication+SimulatorRemoteNotifications.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+SimulatorRemoteNotifications.m"; path = "SimulatorRemoteNotifications/UIApplication+SimulatorRemoteNotifications.m"; sourceTree = "<group>"; };
+		FC0BE4074D92BEBC39671CF75E4DBD43 /* KSJSONCodec.c */ = {isa = PBXFileReference; includeInIndex = 1; name = KSJSONCodec.c; path = Source/KSCrash/Recording/Tools/KSJSONCodec.c; sourceTree = "<group>"; };
+		FFD66AE3D854EFAD984D72962B16C5DE /* libKSCrash.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libKSCrash.a; path = libKSCrash.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E8BEAF9E049B34C5C340DAAC30200ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				018234168EFF093862D8A9E0ADD99C9A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A1E2B6D9C18FACCEB258C1755852E52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFD093E101EF6B8595BB13957917F92A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A35A2B36CDBFFEA315149E2BC8A588D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1ACCAF45071F0259881901B5C01D2A5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7D6A0787A4AAEE1D03EFA6BE649A790 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44371CC8970927AD3CDB821DCCDB468D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00442E19BE8073AC1030053CABEBB974 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				08FFADFA0562E090250057526DDD8B15 /* Pods-Sample */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		08FFADFA0562E090250057526DDD8B15 /* Pods-Sample */ = {
+			isa = PBXGroup;
+			children = (
+				9184B0B29098BA67B31324A63B6E626B /* Pods-Sample-acknowledgements.markdown */,
+				1A028937006AEB288FEAF8150A18CA8F /* Pods-Sample-acknowledgements.plist */,
+				391AB8CED1681B6B2E8E81EB3487A437 /* Pods-Sample-dummy.m */,
+				795B196042536E0D0A519920940F1D06 /* Pods-Sample-frameworks.sh */,
+				E97510E8DDCBC901C0BCE3F13B2579F9 /* Pods-Sample-resources.sh */,
+				7F661BF4BF692ED22026B86C3A1F5F1A /* Pods-Sample.debug.xcconfig */,
+				E55B97A74D816525228905753674FC60 /* Pods-Sample.release.xcconfig */,
+				1796C7CB460BF5C5BEC709ABF7316A91 /* Pods-Sample.staging.xcconfig */,
+			);
+			name = "Pods-Sample";
+			path = "Target Support Files/Pods-Sample";
+			sourceTree = "<group>";
+		};
+		0FD0168B521C853E6103CCC885754266 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				186E02EED52AAE24F4682BA75269A176 /* libBugsnag.a */,
+				FFD66AE3D854EFAD984D72962B16C5DE /* libKSCrash.a */,
+				12E64C30D332C54F04818DC58342056F /* libPods-Sample.a */,
+				94E326967E8173F4681C8E3BFC5E5A55 /* libSimulatorRemoteNotifications.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5BBBB7A7057ACB7163817CACDC8CE8B7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F4F82A4B32E422ACAEC558C38AB4572 /* SimulatorRemoteNotifications.xcconfig */,
+				968F3A516ADAAEFD2959EE7485314287 /* SimulatorRemoteNotifications-dummy.m */,
+				E5052015560847FD666813B380E928CC /* SimulatorRemoteNotifications-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SimulatorRemoteNotifications";
+			sourceTree = "<group>";
+		};
+		7B09029D85BF54BBF18E51AF6F679CC2 /* KSCrash */ = {
+			isa = PBXGroup;
+			children = (
+				E591516DA3EF7DFF51284F2B52A1FBAD /* Recording */,
+				B648022181D3EBD8F1C4E86B5D39393F /* RecordingAdvanced */,
+				F48E26C5ADABDDDB56F0289904C5E39D /* Support Files */,
+			);
+			name = KSCrash;
+			path = KSCrash;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				C5B4CE5DB5F3F8EF6C89CE93DEA4D7C5 /* Pods */,
+				0FD0168B521C853E6103CCC885754266 /* Products */,
+				00442E19BE8073AC1030053CABEBB974 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9C7837FF11FF5EB3BCD0A4FDC2F7E5FD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				058020125C9E14A46034F1622B493AB9 /* Bugsnag.xcconfig */,
+				EB1C1684492A039F3B4D8856899D27CC /* Bugsnag-dummy.m */,
+				B8903AD66ACB36AE07BF5DF7EE3D1639 /* Bugsnag-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Bugsnag";
+			sourceTree = "<group>";
+		};
+		B648022181D3EBD8F1C4E86B5D39393F /* RecordingAdvanced */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = RecordingAdvanced;
+			sourceTree = "<group>";
+		};
+		B8AB6D195C7BCD3922992EB81B79C8E6 /* SimulatorRemoteNotifications */ = {
+			isa = PBXGroup;
+			children = (
+				8A3131860B38DA6E6430ECDA12A7B0FC /* ACSimulatorRemoteNotificationsService.h */,
+				DB4B0652506841939DCC015724DFB139 /* ACSimulatorRemoteNotificationsService.m */,
+				CE752F8B1D98B98225F66C7F4A58F00B /* UIApplication+SimulatorRemoteNotifications.h */,
+				FA9C00BC5C0CA5075F7F69688C99768B /* UIApplication+SimulatorRemoteNotifications.m */,
+				5BBBB7A7057ACB7163817CACDC8CE8B7 /* Support Files */,
+			);
+			name = SimulatorRemoteNotifications;
+			path = SimulatorRemoteNotifications;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF8589764A48DC45743672814F30AFC4 /* Bugsnag */ = {
+			isa = PBXGroup;
+			children = (
+				A19AC89F45468C36CA5C509259DDFFE9 /* BSGKSCrashReportWriter.h */,
+				EA93093D4F3DDE555FD7F7289178F49A /* BSGSerialization.h */,
+				5F62725D18D725CEADDEEECADEECC9FF /* BSGSerialization.m */,
+				F15FC9F6B20E63BB8D4B512DA72AE8D8 /* Bugsnag.h */,
+				666CDC4ED6BA648BD89A5616E230C18B /* Bugsnag.m */,
+				DA675A60A11A774FAFBC5E9E7D467067 /* BugsnagBreadcrumb.h */,
+				828C0B94B998A2B45A94C4BF8248F343 /* BugsnagBreadcrumb.m */,
+				3A0476C02C83660423A14602A327F165 /* BugsnagCollections.h */,
+				476992E0EA0EF70F7C2157C1DF056D15 /* BugsnagCollections.m */,
+				D23DCCE712D9B57861434C43048A0929 /* BugsnagConfiguration.h */,
+				3DBA485E70E6C465C8D98AC207BD05C0 /* BugsnagConfiguration.m */,
+				7DE5617613FFCC8AFBD2934705592F1D /* BugsnagCrashReport.h */,
+				DF2EC0F4000FDFEEBDD855F50123FFF4 /* BugsnagCrashReport.m */,
+				8DBE1C2B7BED57C0ACD4E9642A833AC8 /* BugsnagLogger.h */,
+				AD738C9681FABE94F36E6CFDC8FD5545 /* BugsnagMetaData.h */,
+				C7E89FC0D1C67A43B08884D34C5BFF81 /* BugsnagMetaData.m */,
+				8B33A74371CA4B1A63AD89AAC73C5577 /* BugsnagNotifier.h */,
+				28986A8E40E61761B326085BF3B4ED76 /* BugsnagNotifier.m */,
+				581A874171630B2B6799A7C4224271D0 /* BugsnagSink.h */,
+				0FA7161EB78CF0EDE2695294FCFA31EA /* BugsnagSink.m */,
+				9C7837FF11FF5EB3BCD0A4FDC2F7E5FD /* Support Files */,
+			);
+			name = Bugsnag;
+			path = Bugsnag;
+			sourceTree = "<group>";
+		};
+		C5B4CE5DB5F3F8EF6C89CE93DEA4D7C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF8589764A48DC45743672814F30AFC4 /* Bugsnag */,
+				7B09029D85BF54BBF18E51AF6F679CC2 /* KSCrash */,
+				B8AB6D195C7BCD3922992EB81B79C8E6 /* SimulatorRemoteNotifications */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E591516DA3EF7DFF51284F2B52A1FBAD /* Recording */ = {
+			isa = PBXGroup;
+			children = (
+				F1423757A234DBAEBDAA4905019B6D99 /* AlignOf.h */,
+				35EC461D76B4CBDE53865A30F0D1D41A /* Casting.h */,
+				A756C30DA8FE24B577DE8425F7A97545 /* Compiler.h */,
+				DEB9D7037F2A37D4301C83CBFE0347BE /* Demangle.cpp */,
+				7308259D31E10B17A343E433D7FC9B8A /* Demangle.h */,
+				B78D173AC0657029C3BED0AA8507B95A /* DemangleNodes.h */,
+				B9D7E7E5B28E86FCF360C56FA188B93F /* Fallthrough.h */,
+				976B9A39E2D3963265B1A6FA6577C6B1 /* KSArchSpecific.h */,
+				685077A80DD8E7F8F22F4DD27246FF36 /* KSBacktrace.c */,
+				161B80B39167E120C1EC74654E824552 /* KSBacktrace.h */,
+				413D93BF1E3665F401C79AEC11A93325 /* KSBacktrace_Private.h */,
+				AA99BFC456F2731048F41ABEA2F34C06 /* KSCrash.h */,
+				5566AC2C8FCF5B0AB12F049D41C0D6F4 /* KSCrash.m */,
+				07BC1F111391C371D07B86DC3343B76E /* KSCrashAdvanced.h */,
+				F6A82239DDCA97185DD1F2EEB8C05A74 /* KSCrashC.c */,
+				7A4573DAED60D5C4FAF17567086937D9 /* KSCrashC.h */,
+				16A47A46D99756ED4E446ABCDBCC991B /* KSCrashCallCompletion.h */,
+				B0161069B3D339E4F3167512B0B43009 /* KSCrashCallCompletion.m */,
+				284171A27D964F4B7FD9E1493B4C739F /* KSCrashContext.h */,
+				2F86C0D0CB1C1E7AE709A7D42CC9C4BD /* KSCrashDoctor.h */,
+				D33D6700DEAF2CB47D458B739CFD0FF9 /* KSCrashDoctor.m */,
+				8C4B474935FFDAC82B557F3BE257B878 /* KSCrashReport.c */,
+				19C123554B5B0B7CDC90FF22A46BBA26 /* KSCrashReport.h */,
+				9517E38DDDBD2313BCE4EA1F937911E9 /* KSCrashReportFields.h */,
+				3F14CB6C28F4812252C9BFA24F8979EE /* KSCrashReportFilter.h */,
+				49D080D5409440AA290F215451869582 /* KSCrashReportFilterCompletion.h */,
+				54AA8F2E41713CA9ABB395DD6F6F1C3C /* KSCrashReportStore.h */,
+				67E179036B643760C4E6DB25D945FC2C /* KSCrashReportStore.m */,
+				7C556072BED741565F9DB973E9883A57 /* KSCrashReportVersion.h */,
+				D408F98B33A4EB42340C2C47E68FA215 /* KSCrashReportWriter.h */,
+				06B2461A1E95F14C4F544D82C7A812F0 /* KSCrashSentry.c */,
+				CC3494BBACE77E41AFD2E06BE181D34D /* KSCrashSentry.h */,
+				C5C978EEAA0C4E8E3742BD1206E45BCF /* KSCrashSentry_CPPException.h */,
+				D040E3595AFBFD70484CEB7C6D5B8D2C /* KSCrashSentry_CPPException.mm */,
+				E944A856AD043710691DD7343A4F27A0 /* KSCrashSentry_Deadlock.h */,
+				884DDB552F1B7CB34D3591A90D43D587 /* KSCrashSentry_Deadlock.m */,
+				6417A95825E64E9C9FC986945BABE69D /* KSCrashSentry_MachException.c */,
+				15B47BCF65F34974DD45E18D5DF2F953 /* KSCrashSentry_MachException.h */,
+				4F30CC07C38695CB70CD2C5E6072017B /* KSCrashSentry_NSException.h */,
+				4AE0BC48AC46BEAA8B20A41006AA8A68 /* KSCrashSentry_NSException.m */,
+				797F33A65EBA4EEC3DFC261B4F3DA698 /* KSCrashSentry_Private.h */,
+				9156C026C7B3D3D720226A2D5C2B3CF8 /* KSCrashSentry_Signal.c */,
+				6F5DEED9E5E113B8FE9C2A412F7F7502 /* KSCrashSentry_Signal.h */,
+				86B43A1D64DCE187EFE6A11BC0D6EB58 /* KSCrashSentry_User.c */,
+				800C527C47EC8B440862ED9A8D76D283 /* KSCrashSentry_User.h */,
+				5ED331778B14FEA8BE82A6A3B008A5B4 /* KSCrashState.c */,
+				95820AFE9D914AFA24E9B13CAAF2110A /* KSCrashState.h */,
+				661648BBDC68C691F0C4CD4DC45D485A /* KSCrashType.c */,
+				2599DFEB83388F5278FAF5701E5CDE8E /* KSCrashType.h */,
+				48F33F82CC2DC3D2C737E772AAFEDCA8 /* KSDynamicLinker.c */,
+				82A6F5851E7985AD668239931DA0355B /* KSDynamicLinker.h */,
+				1E955F1822832C4F4D5C098A4542868A /* KSFileUtils.c */,
+				89859EA646301ECF9CED0FC48DCACDE2 /* KSFileUtils.h */,
+				FC0BE4074D92BEBC39671CF75E4DBD43 /* KSJSONCodec.c */,
+				4F653690B0854F08104DEB27F28BF44A /* KSJSONCodec.h */,
+				6EB7A17154EFEA024096BA352277A375 /* KSJSONCodecObjC.h */,
+				D3C6793B86493041CBF28C2E950E6BE5 /* KSJSONCodecObjC.m */,
+				7E9FCE8306942EE7599887EC9416EAFA /* KSLogger.h */,
+				CA64E9AF4659CC4E1A9BB7632147CDF1 /* KSLogger.m */,
+				7561DE9B79B427A46860C33670F84D4B /* KSMach.c */,
+				20D2CF2C9E3C81D203C45B83609D5B15 /* KSMach.h */,
+				977FA63CBC43B8EF9AE274B647FCF714 /* KSMach_Arm.c */,
+				98A0D550AC0E17DC2241F65822BF3F4B /* KSMach_Arm64.c */,
+				37CD1C9F0AD7305DE76C08FF629224A3 /* KSMach_x86_32.c */,
+				EB88C81ED35EC9A8E83F8E33E486B027 /* KSMach_x86_64.c */,
+				A71CC29F85942FF79E79779DBAC637F5 /* KSMachApple.h */,
+				EE0D21D21030E2CAABAA9D80453E90A7 /* KSObjC.c */,
+				320DC7A4121A28A4C83E91AE51987F34 /* KSObjC.h */,
+				524D8D8A126A6CAF7E5917C4F9F99A10 /* KSObjCApple.h */,
+				1C9AA40EE451BC91C664ACA835CB94EE /* KSSafeCollections.h */,
+				5DBC51E52414F63A3453E12EEE282F28 /* KSSafeCollections.m */,
+				2DFD210D3D9BF8F4EB9A9F59C6ECC44C /* KSSignalInfo.c */,
+				8E1B75DEC4893BA97B35662ED92CC18E /* KSSignalInfo.h */,
+				13AD4EDE0AEC5D37E435D1C9D582B936 /* KSSingleton.h */,
+				31DECE9691136D194EF56DA2A1304994 /* KSString.c */,
+				77855FB1735E4B0D542D859DADCD6A43 /* KSString.h */,
+				B39D6D5A2231E8E079C234CFFC1A1922 /* KSSysCtl.c */,
+				BF00D14DD404BBA6666078104F974CB6 /* KSSysCtl.h */,
+				ACA79959AB7661270BF57C0F3AC6F391 /* KSSystemCapabilities.h */,
+				4E31839A88F3904FAA9C5790DB1D86CE /* KSSystemInfo.h */,
+				D544F069C67486505179E184C33712D1 /* KSSystemInfo.m */,
+				EAAFF7A9B7A876A778899E210622BF03 /* KSSystemInfoC.h */,
+				ADECB4B4414FD97529E500469ADC27A8 /* KSZombie.c */,
+				867CED6FCBDA532EDAB4EDB0D6F2241C /* KSZombie.h */,
+				ED38ADE12CF347E508D6D932515203E9 /* LLVM.h */,
+				F20AADFCA74E887E1B8EA147D1C3F6DD /* llvm-config.h */,
+				1FBDE4E55F4534166DAC476A264DE0B0 /* Malloc.h */,
+				F58FBB45C27390E53BC70C704FBC17FF /* None.h */,
+				9DDBBEB331B7B301F8A905BECFD73E95 /* NSDictionary+Merge.h */,
+				A61EFB3237C227493679C6DCF9E70F92 /* NSDictionary+Merge.m */,
+				4455172FBCF7478E52703F0C6AAD38A4 /* NSError+SimpleConstructor.h */,
+				2B06AAE936DD7F0437715D50329352BE /* NSError+SimpleConstructor.m */,
+				796375E47032EF55BF732590411AF40E /* NSString+Demangle.h */,
+				54DC568F212AEBF9DFBD8692A7FF4A17 /* NSString+Demangle.mm */,
+				DAF1CD3CF82055F5A3A4C03DCED9DD27 /* Optional.h */,
+				AAA3BECDC1B6F76430C21FB87052A557 /* Punycode.cpp */,
+				4C6398DD26EA75A6B6A809B40B3853DA /* Punycode.h */,
+				EE81C5CF1D99E93BE0665174411C243E /* RFC3339DateTool.h */,
+				35062A7B2F4F342FA052B5180AF4271B /* RFC3339DateTool.m */,
+				E9A17D42B2F2A085EA19F5908F9BF790 /* StringRef.h */,
+				EC8C39F17DC4A82085081DC1BFD2B419 /* SwiftStrings.h */,
+				B657F209F00D7A3A3A9A7026B57EC66D /* type_traits.h */,
+			);
+			name = Recording;
+			sourceTree = "<group>";
+		};
+		F48E26C5ADABDDDB56F0289904C5E39D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F67D100364910CDA573C2271EA516F7C /* KSCrash.xcconfig */,
+				0CC52DFBD154C84788210F5D58C4EF8B /* KSCrash-dummy.m */,
+				5F002A25E1B4829C1035E00B8565818B /* KSCrash-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KSCrash";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		28D75BB5D027C3B676BE437037D4846D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC9392778077D3A287F0CF8DA7B6041E /* BSGKSCrashReportWriter.h in Headers */,
+				53183BC1E0FEA28A7B8BCFCFFA9DCD0E /* BSGSerialization.h in Headers */,
+				13FE24B62B4DB02E847624E0D0DB5638 /* Bugsnag.h in Headers */,
+				16584803A505AB0093FB8EDF67752C58 /* BugsnagBreadcrumb.h in Headers */,
+				6A5E9B7EED9E71557FC796906E03E0B6 /* BugsnagCollections.h in Headers */,
+				7A4D4DF27C1A245F95245D8F603236E2 /* BugsnagConfiguration.h in Headers */,
+				C0CD0160EBE0481DA772CA8577EBFA8C /* BugsnagCrashReport.h in Headers */,
+				7A3FC2ACDAC1760F0E3C015CBDFD1766 /* BugsnagLogger.h in Headers */,
+				9156408288BD8926FD1E0B396062D10D /* BugsnagMetaData.h in Headers */,
+				DA4E16C87DEC46E3289BBA5B8E6D4FC3 /* BugsnagNotifier.h in Headers */,
+				B4992DBB8CC07CD3350D109D0808D4B7 /* BugsnagSink.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ECA58B74AAFC7633AB6C30B7B8C6BB6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				686646DC98B6708CBC172C9E19B87520 /* AlignOf.h in Headers */,
+				C3FCD92AD4403EC5429B6E081075B2FE /* Casting.h in Headers */,
+				661C6D6BA202E9470A709728BA1B4EF8 /* Compiler.h in Headers */,
+				464697F381D5DA8B7DDA6FE206064CC3 /* Demangle.h in Headers */,
+				2434C65DB0959703F5FF870F58B0DB20 /* DemangleNodes.h in Headers */,
+				501D359D4E5AF3013B34B66AC543604B /* Fallthrough.h in Headers */,
+				6C0ACDB35212E7BE6DE3C86374F8C703 /* KSArchSpecific.h in Headers */,
+				8C3BF6526B79F6EAC681CCA7BE12ED5C /* KSBacktrace.h in Headers */,
+				B974382C524A9CE0AA1BF25358339192 /* KSBacktrace_Private.h in Headers */,
+				FB767526894D283E6B1393F6B704C76C /* KSCrash.h in Headers */,
+				9B0A76DE8AFED967A0757A1C145B6B4C /* KSCrashAdvanced.h in Headers */,
+				8864DA0B7A8AD9CE5CB604BD19394885 /* KSCrashC.h in Headers */,
+				DF1872AEFDE41C54C611E2C66D9D7F32 /* KSCrashCallCompletion.h in Headers */,
+				C9AC913D944CE32C383F88C9358AE990 /* KSCrashContext.h in Headers */,
+				A235E3D1753D6BAB7648D0204635CE39 /* KSCrashDoctor.h in Headers */,
+				058ED9D32C98167C7D2A55B07080A854 /* KSCrashReport.h in Headers */,
+				C7DC911CAA5F3289848C4DF583704661 /* KSCrashReportFields.h in Headers */,
+				28FA872FB4EB3D9C72995266AE97AE09 /* KSCrashReportFilter.h in Headers */,
+				7EC21CB1DB252CFB981422E3A647D3C7 /* KSCrashReportFilterCompletion.h in Headers */,
+				81A0386EEC86F721BFEF722FFCF87850 /* KSCrashReportStore.h in Headers */,
+				ADD161130000BDC9255BDADFC26880B0 /* KSCrashReportVersion.h in Headers */,
+				9C40952B2827198CB73784B191262D85 /* KSCrashReportWriter.h in Headers */,
+				195D98DD9C583192CAF9D77E4EDE2CE0 /* KSCrashSentry.h in Headers */,
+				1B4737195B8577C2D745C5785D586057 /* KSCrashSentry_CPPException.h in Headers */,
+				C33C29BE25E52589D2A2ED26D1D4C9E0 /* KSCrashSentry_Deadlock.h in Headers */,
+				2D3F76662805F809907783D12EA60800 /* KSCrashSentry_MachException.h in Headers */,
+				797D3AFF8F28A52963C96121179A3F06 /* KSCrashSentry_NSException.h in Headers */,
+				E9FDDBCDFF528D93C3018FD6DC25FB9A /* KSCrashSentry_Private.h in Headers */,
+				19C64C523A8B2972C18219C6A6FEA570 /* KSCrashSentry_Signal.h in Headers */,
+				FF51C024C0CFF4124724E054C465088D /* KSCrashSentry_User.h in Headers */,
+				2D29CF6B8D0C650623715D1445EAC620 /* KSCrashState.h in Headers */,
+				25F43F3D21561594AC4A93CE3EA44D6A /* KSCrashType.h in Headers */,
+				4D9FF8833BE5C07CE428823003E2D3E9 /* KSDynamicLinker.h in Headers */,
+				67D1B65B78BC36F723E972A06C5B26E5 /* KSFileUtils.h in Headers */,
+				1C31830464853BA0F8634C6F3CADFC85 /* KSJSONCodec.h in Headers */,
+				A9E3C40DE192B0807C8D69F9C4CACC3D /* KSJSONCodecObjC.h in Headers */,
+				2F7299A189BEF9B9629EA5072BF7FB0D /* KSLogger.h in Headers */,
+				37194D1DC640118392E369A833530BAF /* KSMach.h in Headers */,
+				952452F2312D5448B28DCD7BB49C8BF3 /* KSMachApple.h in Headers */,
+				AAB24F20C649510A17E688AF122DBED5 /* KSObjC.h in Headers */,
+				877CBD5E3733C56617BC21BB887F7E3B /* KSObjCApple.h in Headers */,
+				28A1903C4D406E7241F8849B884581D7 /* KSSafeCollections.h in Headers */,
+				40D3CED97454DEB61B92A798DDE03BB3 /* KSSignalInfo.h in Headers */,
+				BB2FAD242E4476D3020C9F8E07868F1C /* KSSingleton.h in Headers */,
+				C4B4E8F32653571BC0DBBF80DB45DD33 /* KSString.h in Headers */,
+				B25989A32EC65BEFBC333138E5FBCDA2 /* KSSysCtl.h in Headers */,
+				CF3EE7244088BDC47E8F4845A837781B /* KSSystemCapabilities.h in Headers */,
+				02FA46D2BA924A7ED288C7DA182CF01A /* KSSystemInfo.h in Headers */,
+				989883A3EE96B8B7D7CFAF53D58101A0 /* KSSystemInfoC.h in Headers */,
+				84577EA936ABCD61304A1CFAC356CC72 /* KSZombie.h in Headers */,
+				52C44A9FABB298B13B8AD577D818C2F3 /* llvm-config.h in Headers */,
+				BE94087E75EB5A31847385E10CC5D056 /* LLVM.h in Headers */,
+				3934E0B38EFA9191CD2D07F226ACB881 /* Malloc.h in Headers */,
+				CB1CC72B6BD3461C607087131771A511 /* None.h in Headers */,
+				80CD8C6833E71C97B40BA617CC117174 /* NSDictionary+Merge.h in Headers */,
+				F31E0CEB98743AB93D6CCA9732BCC32F /* NSError+SimpleConstructor.h in Headers */,
+				693E4538609E95282B6AE1BAB648EDFA /* NSString+Demangle.h in Headers */,
+				75EC9F4766C091CA3C1603E51F78D808 /* Optional.h in Headers */,
+				87AA7928AF5544B4226E02A6477352E8 /* Punycode.h in Headers */,
+				F1B8F277833BB988645DB87AF1E73602 /* RFC3339DateTool.h in Headers */,
+				203C85D7A5985728B10B38938F086450 /* StringRef.h in Headers */,
+				BFCD666BCB066C2769331BF5111C84D8 /* SwiftStrings.h in Headers */,
+				A8D1B82948B7EF334C9B09AD7E71F529 /* type_traits.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC4D4B845553E2FF822946C8795FF1E9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ECD0CA76C329562D67BB1E6FCC920A1 /* ACSimulatorRemoteNotificationsService.h in Headers */,
+				5A915D9014827544AE5EC0825E396E84 /* UIApplication+SimulatorRemoteNotifications.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0FA4EFF791A52C9C9F93C85356727BDB /* SimulatorRemoteNotifications */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1021A6FD163D5BACD9CFAA56F4D1EEBA /* Build configuration list for PBXNativeTarget "SimulatorRemoteNotifications" */;
+			buildPhases = (
+				8D409B52F1FD0CDF23FD0958C57F2C8D /* Sources */,
+				6A1E2B6D9C18FACCEB258C1755852E52 /* Frameworks */,
+				CC4D4B845553E2FF822946C8795FF1E9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimulatorRemoteNotifications;
+			productName = SimulatorRemoteNotifications;
+			productReference = 94E326967E8173F4681C8E3BFC5E5A55 /* libSimulatorRemoteNotifications.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		1F62F3D827DF2BA99357570716070361 /* KSCrash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25DC31946F3CC8F7BCDCAA3C2ED3C47A /* Build configuration list for PBXNativeTarget "KSCrash" */;
+			buildPhases = (
+				DAD80D503A179C036E1BC84E7810FAF0 /* Sources */,
+				D7D6A0787A4AAEE1D03EFA6BE649A790 /* Frameworks */,
+				8ECA58B74AAFC7633AB6C30B7B8C6BB6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KSCrash;
+			productName = KSCrash;
+			productReference = FFD66AE3D854EFAD984D72962B16C5DE /* libKSCrash.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		63EA637937458CEFC11CCA40D81116A3 /* Pods-Sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32E89FDB5DDA9FDFB97A0900EDA43777 /* Build configuration list for PBXNativeTarget "Pods-Sample" */;
+			buildPhases = (
+				53661C97A19A0B00D69031078A9E5826 /* Sources */,
+				A35A2B36CDBFFEA315149E2BC8A588D9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D205BD2226259A14B73D3A6F2B39A178 /* PBXTargetDependency */,
+				90F329F3AC07088E970B87270A3EEFB1 /* PBXTargetDependency */,
+				154963E16ACE1613759F9E2FD220DCE1 /* PBXTargetDependency */,
+			);
+			name = "Pods-Sample";
+			productName = "Pods-Sample";
+			productReference = 12E64C30D332C54F04818DC58342056F /* libPods-Sample.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D314CC2257EF00D565AADC7BB6CE1DFC /* Bugsnag */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E10D1AD728F3FDB72108BF13DABF954 /* Build configuration list for PBXNativeTarget "Bugsnag" */;
+			buildPhases = (
+				51B833E4914FFF90E9709983F0BC89E0 /* Sources */,
+				2E8BEAF9E049B34C5C340DAAC30200ED /* Frameworks */,
+				28D75BB5D027C3B676BE437037D4846D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E106F1036CD7C593AFBC20BDFB04379D /* PBXTargetDependency */,
+			);
+			name = Bugsnag;
+			productName = Bugsnag;
+			productReference = 186E02EED52AAE24F4682BA75269A176 /* libBugsnag.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 0FD0168B521C853E6103CCC885754266 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D314CC2257EF00D565AADC7BB6CE1DFC /* Bugsnag */,
+				1F62F3D827DF2BA99357570716070361 /* KSCrash */,
+				63EA637937458CEFC11CCA40D81116A3 /* Pods-Sample */,
+				0FA4EFF791A52C9C9F93C85356727BDB /* SimulatorRemoteNotifications */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		51B833E4914FFF90E9709983F0BC89E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				504947F7BB43C933888A96984629FE0A /* BSGSerialization.m in Sources */,
+				47A357D5D267394F96C04E212A5777FD /* Bugsnag-dummy.m in Sources */,
+				79AF8E586450D7D77BAC35F9F5CB204C /* Bugsnag.m in Sources */,
+				D56FB690865A714D88CAA6BF8BE3AD1C /* BugsnagBreadcrumb.m in Sources */,
+				ED773C92915CE91583C06C2DC45B5F89 /* BugsnagCollections.m in Sources */,
+				2325F169260048823EC81F6ED58A5171 /* BugsnagConfiguration.m in Sources */,
+				530D8EDD4E74186AF601747C2D8ECFED /* BugsnagCrashReport.m in Sources */,
+				F08C28A607CFCF678105CE803E1CB9F9 /* BugsnagMetaData.m in Sources */,
+				2C181027A99AD335C62A45E79B3CEA83 /* BugsnagNotifier.m in Sources */,
+				C6F192CB10B2A2F9170A8C52C504237D /* BugsnagSink.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53661C97A19A0B00D69031078A9E5826 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				182685DE2C2D9F2CD7A3BC4F723F2143 /* Pods-Sample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D409B52F1FD0CDF23FD0958C57F2C8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B8272F4B6036929FE04281C2338472B /* ACSimulatorRemoteNotificationsService.m in Sources */,
+				7326BBBC1BECE80A8E463B7F508F6AAE /* SimulatorRemoteNotifications-dummy.m in Sources */,
+				261D9524BA732082B2C188E2E219B49A /* UIApplication+SimulatorRemoteNotifications.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAD80D503A179C036E1BC84E7810FAF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D60CDBC51166E043739DBE74CFF84837 /* Demangle.cpp in Sources */,
+				8577D01071513A83C2BE0B628D910F49 /* KSBacktrace.c in Sources */,
+				0747A3C88D2451D547EA480996C8A28B /* KSCrash-dummy.m in Sources */,
+				A91587BB9ACEB88C822E6AB19D0E570C /* KSCrash.m in Sources */,
+				A505E22401548CA2714EA802DA450CF7 /* KSCrashC.c in Sources */,
+				98C1E204DA5B7C6129EFD3DD292E0476 /* KSCrashCallCompletion.m in Sources */,
+				61E788389A7E8317AB0766435A488407 /* KSCrashDoctor.m in Sources */,
+				0686BA40E5912133B523F8FDFDDD6F73 /* KSCrashReport.c in Sources */,
+				FDB63EC24F242D48C4230FADED5CCCE2 /* KSCrashReportStore.m in Sources */,
+				0680E3E743780200E71C88EA9AD99453 /* KSCrashSentry.c in Sources */,
+				6FBDFD8B775E7E9400C70E1B18651C8D /* KSCrashSentry_CPPException.mm in Sources */,
+				F3C41DAA4D2E1D72083D5A252FADDD61 /* KSCrashSentry_Deadlock.m in Sources */,
+				9E90B076E16086105944B45CBBFA2CDF /* KSCrashSentry_MachException.c in Sources */,
+				8A70D2AD2E9EFD5A8372215525FE278B /* KSCrashSentry_NSException.m in Sources */,
+				BD79C9F3096A7EB9206606392D7DBCD8 /* KSCrashSentry_Signal.c in Sources */,
+				D3769D51031B9601F979269B955418EB /* KSCrashSentry_User.c in Sources */,
+				6D83D17E10B39593D57D3E61EE718132 /* KSCrashState.c in Sources */,
+				A6592E695B9ABFA1203EC4DA98D58200 /* KSCrashType.c in Sources */,
+				61F2DE0975EEE32C4C65DDF2F7A3E02A /* KSDynamicLinker.c in Sources */,
+				FC6427AF105AE17424010F86EE959B6B /* KSFileUtils.c in Sources */,
+				B576187CC9C039E5CBBB147DBEB6ECE3 /* KSJSONCodec.c in Sources */,
+				849AA85632B727E34F767C99C35B3FFA /* KSJSONCodecObjC.m in Sources */,
+				26394C3DFDF2461679BCD5CF8ABA1934 /* KSLogger.m in Sources */,
+				3946F657A878974A74506B4E4F41AB2E /* KSMach.c in Sources */,
+				BB16FFA24B807AB235F95AC81AA1BEFB /* KSMach_Arm.c in Sources */,
+				09C686DE383DF5B467E922020F564778 /* KSMach_Arm64.c in Sources */,
+				A105533BFD68A03CFBE694F0F468A671 /* KSMach_x86_32.c in Sources */,
+				C4D58155F831225AC00734BECDC89B58 /* KSMach_x86_64.c in Sources */,
+				1C0DE80F6DC7C9BA7E235CAF8CDE723F /* KSObjC.c in Sources */,
+				6E8CDAA71E3AB2AACDDC5668D6E2328C /* KSSafeCollections.m in Sources */,
+				A65A0FB3D1C4559839C20921C2966D1E /* KSSignalInfo.c in Sources */,
+				66FC6D6B535D41DF50C3C9DF7F1AFAA7 /* KSString.c in Sources */,
+				19D1C635040991DD65736581D13465E6 /* KSSysCtl.c in Sources */,
+				1CFC0886850098EAF644EBE986735DDF /* KSSystemInfo.m in Sources */,
+				AF7543FEEF89B0EF95EC1ADA37FB1881 /* KSZombie.c in Sources */,
+				39CC58F0EBF9033AF993D6E22C1A8649 /* NSDictionary+Merge.m in Sources */,
+				DB4419ED30760BEF8899F163D1B98C13 /* NSError+SimpleConstructor.m in Sources */,
+				2D82C050EEBE30DD76A7F93757F6CA48 /* NSString+Demangle.mm in Sources */,
+				823AE2914A3815D6B5DEBDC5E09656BC /* Punycode.cpp in Sources */,
+				9193F199AE00593088A4B27F55F421BE /* RFC3339DateTool.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		154963E16ACE1613759F9E2FD220DCE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SimulatorRemoteNotifications;
+			target = 0FA4EFF791A52C9C9F93C85356727BDB /* SimulatorRemoteNotifications */;
+			targetProxy = 6CC9F093475DDD5CF0C8EA9A723BC253 /* PBXContainerItemProxy */;
+		};
+		90F329F3AC07088E970B87270A3EEFB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KSCrash;
+			target = 1F62F3D827DF2BA99357570716070361 /* KSCrash */;
+			targetProxy = 51EB215AC5B24B90E37CC8242F8C6124 /* PBXContainerItemProxy */;
+		};
+		D205BD2226259A14B73D3A6F2B39A178 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Bugsnag;
+			target = D314CC2257EF00D565AADC7BB6CE1DFC /* Bugsnag */;
+			targetProxy = 84F09B52099DACB3159C17CA7D56C9AA /* PBXContainerItemProxy */;
+		};
+		E106F1036CD7C593AFBC20BDFB04379D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KSCrash;
+			target = 1F62F3D827DF2BA99357570716070361 /* KSCrash */;
+			targetProxy = 431E49CCFFB5A4A623723331278EEA44 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1021100EBFC1F86A5F9275031CCAF12E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F661BF4BF692ED22026B86C3A1F5F1A /* Pods-Sample.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1D9DE01723744CD9E6AA664646772F6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F4F82A4B32E422ACAEC558C38AB4572 /* SimulatorRemoteNotifications.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SimulatorRemoteNotifications/SimulatorRemoteNotifications-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		2824E527F84374DE6B0E3A492A61CCA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 058020125C9E14A46034F1622B493AB9 /* Bugsnag.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Bugsnag/Bugsnag-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2B4A2600519B7464CE13FA9E990DECA6 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 058020125C9E14A46034F1622B493AB9 /* Bugsnag.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Bugsnag/Bugsnag-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Staging;
+		};
+		2F01D91B510C6D83EF2B4F38443D1140 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F67D100364910CDA573C2271EA516F7C /* KSCrash.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KSCrash/KSCrash-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		34FE9531DA9AF2820790339988D5FF41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3EADE6007E2F1838389661D258A4D86C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E55B97A74D816525228905753674FC60 /* Pods-Sample.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4926F9A816DCD08A42119E947B27203A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F67D100364910CDA573C2271EA516F7C /* KSCrash.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KSCrash/KSCrash-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		6403FFD3A3F614E02039AB087C025A83 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F4F82A4B32E422ACAEC558C38AB4572 /* SimulatorRemoteNotifications.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SimulatorRemoteNotifications/SimulatorRemoteNotifications-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Staging;
+		};
+		793BF2B2CE9DB3DDA6BA91D26C13EA00 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F67D100364910CDA573C2271EA516F7C /* KSCrash.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KSCrash/KSCrash-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Staging;
+		};
+		AF061F7F09C112A259F8A2FD16339836 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F4F82A4B32E422ACAEC558C38AB4572 /* SimulatorRemoteNotifications.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SimulatorRemoteNotifications/SimulatorRemoteNotifications-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B2ABB66B4642934FD68C897568410C41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 058020125C9E14A46034F1622B493AB9 /* Bugsnag.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Bugsnag/Bugsnag-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C104F7F091290C3D1E248192F07FE689 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D0014F03591E74C5AC2A2F1AE5040919 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1796C7CB460BF5C5BEC709ABF7316A91 /* Pods-Sample.staging.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Staging;
+		};
+		D620E9328C94C2E8E9E67112C3DE5EE8 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_STAGING=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Staging;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1021A6FD163D5BACD9CFAA56F4D1EEBA /* Build configuration list for PBXNativeTarget "SimulatorRemoteNotifications" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF061F7F09C112A259F8A2FD16339836 /* Debug */,
+				1D9DE01723744CD9E6AA664646772F6D /* Release */,
+				6403FFD3A3F614E02039AB087C025A83 /* Staging */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25DC31946F3CC8F7BCDCAA3C2ED3C47A /* Build configuration list for PBXNativeTarget "KSCrash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F01D91B510C6D83EF2B4F38443D1140 /* Debug */,
+				4926F9A816DCD08A42119E947B27203A /* Release */,
+				793BF2B2CE9DB3DDA6BA91D26C13EA00 /* Staging */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C104F7F091290C3D1E248192F07FE689 /* Debug */,
+				34FE9531DA9AF2820790339988D5FF41 /* Release */,
+				D620E9328C94C2E8E9E67112C3DE5EE8 /* Staging */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32E89FDB5DDA9FDFB97A0900EDA43777 /* Build configuration list for PBXNativeTarget "Pods-Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1021100EBFC1F86A5F9275031CCAF12E /* Debug */,
+				3EADE6007E2F1838389661D258A4D86C /* Release */,
+				D0014F03591E74C5AC2A2F1AE5040919 /* Staging */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E10D1AD728F3FDB72108BF13DABF954 /* Build configuration list for PBXNativeTarget "Bugsnag" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2824E527F84374DE6B0E3A492A61CCA2 /* Debug */,
+				B2ABB66B4642934FD68C897568410C41 /* Release */,
+				2B4A2600519B7464CE13FA9E990DECA6 /* Staging */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
